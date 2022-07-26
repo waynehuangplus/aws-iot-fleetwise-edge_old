@@ -21,6 +21,9 @@
             "signalName": "Vehicle.OBD.EngineCoolantTemperature"
         },
         {
+            "signalName": "Vehicle.OBD.OilTemperature"
+        },
+        {
             "signalName": "Vehicle.OBD.ThrottlePosition"
         },
         {

@@ -40,6 +40,7 @@ try:
             set_with_print(can_sim.set_pid, 'FUEL_TANK_LEVEL', 100-i)
             set_with_print(can_sim.set_pid, 'AMBIENT_AIR_TEMPERATURE', 20+i)
             set_with_print(can_sim.set_pid, 'ENGINE_COOLANT_TEMPERATURE', 80+i)
+            set_with_print(can_sim.set_pid, 'ENGINE_OIL_TEMPERATURE', 80+i)
             set_with_print(can_sim.set_pid, 'THROTTLE_POSITION', (i%4)*100)
             set_with_print(can_sim.set_dtc, 'ECM_DTC1', i/5 >= 1)
             time.sleep(5)
