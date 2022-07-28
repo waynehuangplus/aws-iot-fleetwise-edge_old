@@ -43,6 +43,7 @@ try:
             set_with_print(can_sim.set_pid, 'ENGINE_OIL_TEMPERATURE', 80+i)
             set_with_print(can_sim.set_pid, 'THROTTLE_POSITION', (i%4)*100)
             set_with_print(can_sim.set_dtc, 'ECM_DTC1', i/5 >= 1)
+            set_with_print(can_sim.set_pid, 'CYLINDER_FUEL_RATE', 1000+i*100)
             time.sleep(5)
             if i<6 or i>9:
                 # trigger is > 7000 so trigger
